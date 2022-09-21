@@ -24,7 +24,7 @@ module "ec2-test" {
 # EBS
 resource "aws_ebs_volume" "tf_learning_ebs" {
   availability_zone = "us-east-1a"
-  size              = 40
+  size              = 60
   tags = merge(local.default_tags)
 
   # lifecycle {
