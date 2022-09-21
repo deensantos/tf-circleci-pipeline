@@ -17,7 +17,8 @@ module "ec2-test" {
     source = ".//ec2-module"
     name = "instance-01" 
     instance_type = "t2.micro" 
-    size = 30
+    vol_size = 50
+  
 } 
 
 # EBS

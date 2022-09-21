@@ -19,7 +19,7 @@ resource "aws_instance" "instance" {
     volume_type = var.vol_type
   }
 
-user_data = templatefile(var.user_data, { "name" = "test"})
+#user_data = templatefile(var.user_data, { "name" = "test"})
 tags = merge({Name = var.name},var.ec2_tags)
 
 }
